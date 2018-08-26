@@ -1,0 +1,6 @@
+@using EpiserverLabSite
+@model PageViewModel<EpiserverLabSite.Models.Pages.StartPage>
+
+<h1>Options: @Model.CurrentPage.TestOPTIONS</h1>
+
+@Html.PropertyFor(x => x.CurrentPage.MainContentArea, new { CssClass = "row equal-height", tag = Global.ContentAreaTags.FullWidth })
